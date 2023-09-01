@@ -40,7 +40,7 @@
                 = <&macro_press &kp LSHFT>
                 , <&macro_tap &kp SQT>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp A
+                , <&macro_tap &kp A>
                 ;
         };
     };
