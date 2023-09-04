@@ -15,5 +15,6 @@
 include:
   - board: nice_nano_v2
     shield: cradio_left
-  - board: nice_nano_v2
-    shield: cradio_right
+# When changing only the layout, we only need to build and upload the left shield
+#  - board: nice_nano_v2
+#    shield: cradio_right
