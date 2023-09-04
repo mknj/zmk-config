@@ -66,11 +66,11 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  1       │  2       │  3       │    Ä     │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp INS    &kp N1     &kp N2     &kp N3     &m_auml        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
+        //│ INSERT   │  1       │  2       │  3       │    Ä     │   │ PAGE UP  │ HOME     │ UP       │ END      │  :       │
+            &kp INS    &kp N1     &kp N2     &kp N3     &m_auml        &kp PG_UP  &kp HOME   &kp UARW   &kp END    &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │  0       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp DEL    &kp N4     &kp N5     &kp N6     &kp N0         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
+        //│ DELETE   │  4       │  5       │  6       │  0       │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │  ;       │
+            &kp DEL    &kp N4     &kp N5     &kp N6     &kp N0         &kp PG_DN  &kp LARW   &kp DARW   &kp RARW   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
            &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
