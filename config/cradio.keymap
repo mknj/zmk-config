@@ -104,7 +104,7 @@
            &sys_reset  &kp F1     &kp F2     &kp F3    &kp F10       &bt BT_SEL 0  &trans    &trans     &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &kp F4     &kp F5     &kp F6     &kp F11      &bt BT_SEL 1  &trans    &trans     &trans    &bootloader
+          &bootloader  &kp F4     &kp F5     &kp F6     &kp F11      &bt BT_SEL 1  &trans    &trans     &kp RA(L) &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &kp F7     &kp F8     &kp F9     &kp F12      &bt BT_SEL 2 &bt BT_CLR &trans     &trans     &trans

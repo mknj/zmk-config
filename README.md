@@ -8,3 +8,4 @@ i am using it under linux and windows with the us-international layout.
 * re-arranged cursor keys
 * swapped space and enter
 * moved 0
+* add trilayer RALT L 
