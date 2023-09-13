@@ -5,6 +5,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 // https://zmk.dev/docs/codes
+// https://de.wikipedia.org/wiki/Tastaturbelegung_US-International#/media/Datei:KB_US-International.svg
+// https://keymap-drawer.streamlit.app/?zmk_url=https%3A%2F%2Fgithub.com%2Fmknj%2Fzmk-config%2Fblob%2Fmain%2Fconfig%2Fcradio.keymap
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
@@ -83,8 +85,8 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+        //│  `       │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
+           &kp GRAVE  &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
