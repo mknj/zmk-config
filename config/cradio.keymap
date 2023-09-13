@@ -56,7 +56,7 @@
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+          &ht LSHFT Z  &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT  &ht RSHFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE     &kp ENTER  &lt 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -100,14 +100,14 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &kp F1     &kp F2     &kp F3    &kp F10       &bt BT_SEL 0  &trans    &trans     &trans    &sys_reset
+        //│ RESET    │          │          │          │          │   │          │          │          │          │  RESET   │
+           &sys_reset  &kp F1     &kp F2     &kp F3    &kp F10       &bt BT_SEL 0 &kp C_VOL_DN &kp  C_VOL_UP &kp C_MUTE   &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &kp F4     &kp F5     &kp F6     &kp F11      &bt BT_SEL 1  &trans    &trans     &kp RA(L) &bootloader
+        //│BOOTLOADER│          │          │          │          │   │          │          │          │          │BOOTLOADER│
+          &bootloader  &kp F4     &kp F5     &kp LGUI  &kp F11       &bt BT_SEL 1  &ko C_BRI_UP &kp C_BRI_DN       &kp RA(L) &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &kp F7     &kp F8     &kp F9     &kp F12      &bt BT_SEL 2 &bt BT_CLR &trans     &trans     &trans
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &kp PSCRN   &kp F7     &kp F8     &kp F9     &kp F12      &bt BT_SEL 2 &bt BT_CLR &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
