@@ -118,7 +118,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │  RESET   │
-            &kp F13     &kp F14    &kp F15    &kp F16    &kp F17       &KP C_PLAY &kp C_PP &kp C_PAUSE &kp C_PREV  &kp C_NEXT
+            &kp F13     &kp F14    &kp F15    &kp F16    &kp F17       &kp C_PLAY &kp C_PP &kp C_PAUSE &kp C_PREV  &kp C_NEXT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │          │   │          │          │          │          │BOOTLOADER│
              &kp F18    &kp F19     &kp F20   &kp F21    &kp F22       &kp C_FF &kp C_RW &kp CAPS    &kp LCAPS  &kp LSLCK
