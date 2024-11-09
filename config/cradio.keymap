@@ -45,6 +45,47 @@
                 , <&macro_tap &kp A>
                 ;
         };
+        m_uuml: u_auml {
+            label = "ZM_m_uuml";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp SQT>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp U>
+                ;
+        };
+        m_ouml: m_ouml {
+            label = "ZM_m_ouml";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp SQT>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp O>
+                ;
+        };
+        m_suml: m_suml {
+            label = "ZM_m_suml";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp S>
+                , <&macro_release &kp RALT>
+                ;
+        };
+        m_numl: m_numl {
+            label = "ZM_m_numl";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp TILDE>
+                , <&macro_tap &kp N>
+                ;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -117,14 +158,14 @@
         cuatro_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │  RESET   │
-            &kp F13     &kp F14    &kp F15    &kp F16    &kp F17       &kp C_PLAY &kp C_PP &kp C_PAUSE &kp C_PREV  &kp C_NEXT
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &kp F13     &kp F14    &kp F15    &kp F16    &kp F17       &kp C_PLAY &m_uuml  &kp C_PAUSE  &m_ouml  &kp C_NEXT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │          │   │          │          │          │          │BOOTLOADER│
-             &kp F18    &kp F19     &kp F20   &kp F21    &kp F22       &kp C_FF &kp C_RW &kp CAPS    &kp LCAPS  &kp LSLCK
+             &m_auml    &m_suml     &kp F20   &kp F21    &kp F22       &kp C_FF   &kp C_RW &kp CAPS    &kp LCAPS  &kp LSLCK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp F23   &kp F24     &kp LANG1  &kp LANG2     &kp F12      &kp K_APP   &trans &trans     &trans     &trans
+           &kp F23   &kp F24       &kp F18    &kp F19     &trans       &m_numl   &trans      &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
