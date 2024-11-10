@@ -15,7 +15,6 @@
 / {
     behaviors {
         ht: hold_tap {
-            label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -36,7 +35,6 @@
     };
     macros {
         m_auml: m_auml {
-            label = "ZM_m_auml";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -47,7 +45,6 @@
                 ;
         };
         m_uuml: u_auml {
-            label = "ZM_m_uuml";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -58,7 +55,6 @@
                 ;
         };
         m_ouml: m_ouml {
-            label = "ZM_m_ouml";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -69,7 +65,6 @@
                 ;
         };
         m_suml: m_suml {
-            label = "ZM_m_suml";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -79,7 +74,6 @@
                 ;
         };
         m_numl: m_numl {
-            label = "ZM_m_numl";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -111,10 +105,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │    Ä     │   │ PAGE UP  │ HOME     │ UP       │ END      │  :       │
-            &kp INS    &kp N1     &kp N2     &kp N3     &m_auml        &kp PG_UP  &kp HOME   &kp UARW   &kp END    &kp COLON
+            &kp INS    &kp N1     &kp N2     &kp N3     &m_auml        &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp SEMI
+        //│ DELETE   │  4       │  5       │  6       │  0       │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │  ;       │
+            &kp DEL    &kp N4     &kp N5     &kp N6     &kp N0         &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
            &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
@@ -128,7 +122,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  `       │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-           &kp GRAVE  &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+            &kp GRAVE  &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
@@ -160,7 +154,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp F13     &kp F14    &kp F15    &kp F16    &kp F17       &kp C_PLAY &m_uuml  &kp C_PAUSE  &m_ouml  &kp C_NEXT
+            &kp F13     &kp F14    &kp F15    &kp F16    &kp F17   &studio_unlock &m_uuml  &kp C_PAUSE  &m_ouml  &kp C_NEXT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │          │   │          │          │          │          │BOOTLOADER│
              &m_auml    &m_suml     &kp F20   &kp F21    &kp F22       &kp C_FF   &kp C_RW &kp CAPS    &kp LCAPS  &kp LSLCK
