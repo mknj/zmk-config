@@ -50,13 +50,15 @@
     },
     "S\n\nß\n\nF4\n\n@\n4\n\n\nalt",
     {
-      "x": 1
+      "x": 1,
+      "t": "#000000\n\n\n\n\n\n#5cad6d\n#ada735\n\n\n#ce3939"
     },
     "F\n\n\n\nF6\n\n$\n6\n\n\nwin"
   ],
   [
     {
-      "y": -0.75
+      "y": -0.75,
+      "t": "#000000\n\n7280ff\n\n\n\n#5cad6d\n#ada735\n\n\n#ce3939"
     },
     "A\n\ná\n\nBoot\n\n!\nDel\n\n\nshift"
   ],
@@ -147,7 +149,7 @@
       "y": -0.6499999999999999,
       "x": 1
     },
-    "U\n\nú\n\nV↓\n\n(\nHome",
+    "U\n\nú\n\nB↑\n\n(\nHome",
     {
       "x": 1
     },
@@ -172,14 +174,14 @@
       "x": 2,
       "t": "#000000\n\n\n\n\n\n#5cad6d\n#ada735\n\n\n#ce3939"
     },
-    "K\n\n\n\nB↓\n\n=\n↓\n\n\nctrl"
+    "K\n\n\n\nV↓\n\n=\n↓\n\n\nctrl"
   ],
   [
     {
       "y": -0.6499999999999999,
       "x": 1
     },
-    "J\n\n\n\nB↑\n\n-\n←\n\n\nwin",
+    "J\n\n\n\nB↓\n\n-\n←\n\n\nwin",
     {
       "x": 1,
       "c": "#9da1c7"
@@ -204,7 +206,8 @@
   [
     {
       "y": -0.7000000000000002,
-      "x": 2
+      "x": 2,
+      "t": "#000000\n\n\n\n\n\n#5cad6d"
     },
     "<\n,\n\n\n\n\n+"
   ],
