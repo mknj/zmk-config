@@ -81,7 +81,7 @@
                 , <&macro_tap &kp N>
                 ;
         };
-    }
+    };
     keymap {
         compatible = "zmk,keymap";
         default_layer {
